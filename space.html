@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Space Exploration</title>
+  <style>
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#0b1020; color:red; }
+    header { background:#12183a; padding:14px 18px; position:sticky; top:0; }
+    header h1 { margin:0; font-size:22px; }
+    nav a { color:red; text-decoration:none; margin-right:12px; }
+    nav a:hover { text-decoration:underline; }
+
+    .hero { text-align:center; padding:50px 18px; background: radial-gradient(600px 300px at 80% -40%, rgba(84,110,255,.25), transparent),
+                                       radial-gradient(500px 260px at 10% 120%, rgba(64,224,208,.18), transparent);
+    }
+    .hero h2 { font-size:32px; margin:0 0 8px; }
+    .hero p { margin:0; }
+
+    .section { padding:28px 18px; max-width:960px; margin:0 auto; }
+    .card-box { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; }
+    .card { background:#12183a; border:1px solid #2a3568; border-radius:8px; padding:14px; }
+    .card h3 { margin:0 0 6px; font-size:18px; }
+    .card p { margin:0; }
+
+    .gallery { display:grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap:10px; }
+    .pic { height:100px; border-radius:8px; background:#1d2550; border:1px dashed #3e4aa3; display:flex; align-items:center; justify-content:center; font-size:12px; color:red; }
+
+    footer { text-align:center; padding:20px; color:red; border-top:1px solid #2a3568; margin-top:20px; }
+    .btn { display:inline-block; padding:10px 12px; margin-top:10px; background:#2a3568; color:red; text-decoration:none; border-radius:6px; border:1px solid #3e4aa3; }
+    .btn:hover { filter:brightness(1.08); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Space Exploration</h1>
+    <nav>
+      <a href="#planets">Planets</a>
+      <a href="#missions">Missions</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover Our Solar System</h2>
+    <p>Simple site to learn a little about space.</p>
+    <a class="btn" href="#planets">Start Exploring</a>
+  </section>
+
+  <section id="planets" class="section">
+    <h2>Planets</h2>
+    <div class="card-box">
+      <div class="card">
+        <h3>🌑 Mercury</h3>
+        <p>Smallest planet. Very hot days, freezing nights.</p>
+      </div>
+      <div class="card">
+        <h3>🌕 Venus</h3>
+        <p>Thick clouds and extreme heat.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Earth</h3>
+        <p>Our home. Liquid water and life.</p>
+      </div>
+      <div class="card">
+        <h3>🪐 Saturn</h3>
+        <p>Known for its beautiful rings.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="missions" class="section">
+    <h2>Missions</h2>
+    <div class="card-box">
+      <div class="card">
+        <h3>Apollo 11</h3>
+        <p>First crewed Moon landing in 1969.</p>
+      </div>
+      <div class="card">
+        <h3>Voyager 1</h3>
+        <p>Farthest human-made object in space.</p>
+      </div>
+      <div class="card">
+        <h3>JWST</h3>
+        <p>Powerful space telescope seeing deep into the universe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="pic">Star field</div>
+      <div class="pic">Galaxy swirl</div>
+      <div class="pic">Nebula</div>
+      <div class="pic">Mars dunes</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Have a question about space? Send an email.</p>
+    <a class="btn" href="mailto:Kharvard86@gmail.com">Email Us</a>
+  </section>
+
+  <footer>
+    © 2025 Space Exploration Demo
+  </footer>
+</body>
+</html>
